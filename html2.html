@@ -96,20 +96,20 @@ function init() {
     
     //// 材料区开始
     // 1. 瓷砖材料
-    var ceramicTexture = THREE.ImageUtils.loadTexture("/assets/ceramic.png");
+    var ceramicTexture = THREE.ImageUtils.loadTexture("./assets/ceramic.png");
     ceramicTexture.wrapS = THREE.RepeatWrapping;
     ceramicTexture.wrapT = THREE.RepeatWrapping;
     ceramicTexture.repeat.set(4, 4);
     var ceramicMaterial = new THREE.MeshLambertMaterial({map: ceramicTexture});
     // 2. 砖头材料
-    var brickTexture = THREE.ImageUtils.loadTexture("/assets/brick.png");
+    var brickTexture = THREE.ImageUtils.loadTexture("./assets/brick.png");
     brickTexture.wrapS = THREE.RepeatWrapping;
     brickTexture.wrapT = THREE.RepeatWrapping;
     brickTexture.repeat.set(4, 4);
     var brickMaterial = new THREE.MeshLambertMaterial({map: brickTexture});
     brickMaterial.side = THREE.DoubleSide;
     // 2. 草地材料
-    var grassTexture = THREE.ImageUtils.loadTexture("/assets/grass.png");
+    var grassTexture = THREE.ImageUtils.loadTexture("./assets/grass.png");
     grassTexture.wrapS = THREE.RepeatWrapping;
     grassTexture.wrapT = THREE.RepeatWrapping;
     grassTexture.repeat.set(10, 10);
